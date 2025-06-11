@@ -38,6 +38,7 @@ server <- function(input, output, session) {
       summarise(mean_values = mean(values, na.rm = TRUE), .groups = "drop")
   })
   
+  
   # Render table
   output$tb2 <- renderTable({
     data3()
